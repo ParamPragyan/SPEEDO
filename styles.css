@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&family=Syne+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.txt {
+  color: rgb(0, 255, 0);
+  background: black;
+  font-family: "Syne Mono", monospace;
+  font-size: 4.5rem;
+  padding: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  display: inline-block;
+  padding: 100px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.882);
+  text-align: center;
+}
+
+.content.add1 {
+  font-size: 6rem;
+  padding-bottom: 1rem;
+}
+
+.spin {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: conic-gradient(rgba(30, 229, 8, 0.392) 0%, transparent 65%);
+  position: relative;
+  animation: radarRotate 20s linear;
+}
+
+@keyframes radarRotate {
+  100% {
+    transform: rotate(-3600deg);
+  }
+}
+
+.spin::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  top: 0;
+  width: 0;
+  left: calc(50% - 8px);
+  border: solid 9px transparent;
+  border-top: 150px solid rgb(42, 251, 0);
+  filter: drop-shadow(0 0 12px rgb(91, 234, 30));
+}
+
+.spinner h1 {
+  line-height: 1.3;
+  margin-bottom: 32px;
+  color: rgb(0, 0, 0);
+}
+
+.loder-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spinner-content button {
+  position: relative;
+  cursor: pointer;
+  height: 300px;
+  width: 300px;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+  border-radius: 50%;
+  background-color: black;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 0 12px rgb(7, 24, 65);
+  font-family: "Righteous", cursive;
+}
+.spinner-content button:hover {
+  background-color: rgb(12, 86, 4);
+}
+
+.spinner-content button::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -2px;
+  left: -2px;
+  border: 3px solid rgb(64, 243, 24);
+  border-radius: 50%;
+  animation: btnRing 2s linear;
+}
+
+@keyframes btnRing {
+  60%,
+  100% {
+    height: calc(100% + 60px);
+    width: calc(100% + 60px);
+    top: -32px;
+    left: -32px;
+    opacity: 0;
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  font-size: 64px;
+  margin: 12px 0 32px 0;
+  flex-direction: column;
+  color: #fff;
+}
+.content small {
+  font-size: 40%;
+}
+
+.spinner-content.btn2 button {
+  font-size: 1.5rem;
+  height: 100px;
+  width: 150px;
+}
+.github {
+  background: rgb(0, 0, 0);
+}
+.github img {
+  padding-top: 2rem;
+  width: 5rem;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 50px;
+  }
+  .txt {
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 402px) {
+  .container {
+    padding: 30px;
+  }
+}
