@@ -24,15 +24,9 @@ document.querySelector("button").addEventListener("click", (e) => {
     document.querySelector(".content").innerHTML =
       totalSpeed + "<small>Mbps</small>";
 
-    const link = encodeURI("https://speedo-chi.vercel.app/");
+    const link = encodeURI("\n"+"https://speedo-chi.vercel.app/");
     const msg = encodeURIComponent(
-      "                " +
-        "                " +
-        "              " +
-        "              " +
-        "              " +
-        "              " +
-        "You can also check your internet speed by clicking this link: "
+      "\n" + "Clicking this will also allow you to check your internet speed 👇"
     );
     const dyanamic = totalSpeed + "Mbps";
     const title = encodeURIComponent("My Speed is ");
