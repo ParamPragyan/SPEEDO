@@ -17,6 +17,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .txt {
   color: rgb(0, 255, 0);
@@ -149,6 +151,50 @@ body {
 .github img {
   padding-top: 2rem;
   width: 5rem;
+}
+
+.share-buttons {
+  position: absolute;
+  right: -6rem;
+}
+
+.appear {
+  right: 1rem;
+  opacity: 1;
+}
+
+.twitter-bg {
+  background: #ffffffd1;
+  border: 0.5rem solid rgb(45, 232, 3);
+  padding: 130px;
+  bottom: -6.4rem;
+  left: -1.8rem;
+  border-radius: 50% 0 50% 0;
+  transform: rotate(-45deg);
+  position: absolute;
+  z-index: -1;
+}
+.share-buttons img {
+  width: 4rem;
+  cursor: pointer;
+
+  box-shadow: rgba(1, 200, 24, 0.685) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  border-radius: 50%;
+  transition: transform 330ms ease-in-out;
+}
+
+.share-buttons img:hover {
+  transform: scale(1.1);
+}
+.share-buttons img:active {
+  box-shadow: rgb(187, 187, 223) 0px 50px 100px -20px,
+    rgba(222, 202, 202, 0.86) 0px 30px 60px -30px,
+    rgba(20, 63, 106, 0.853) 0px -2px 6px 0px inset;
 }
 
 @media (max-width: 500px) {

@@ -23,11 +23,29 @@ document.querySelector("button").addEventListener("click", (e) => {
 
     document.querySelector(".content").innerHTML =
       totalSpeed + "<small>Mbps</small>";
+
+    const link = encodeURI("https://speedo-chi.vercel.app/");
+    const msg = encodeURIComponent(
+      "                " +
+        "                " +
+        "              " +
+        "              " +
+        "              " +
+        "              " +
+        "You can also check your internet speed by clicking this link: "
+    );
+    const dyanamic = totalSpeed + "Mbps";
+    const title = encodeURIComponent("My Speed is ");
+
+    const twitter = document.querySelector(".twitter");
+    twitter.href = `http://twitter.com/share?&title=${title}&text=${dyanamic}&text=${msg}&url=${link}`;
+
     document.querySelector(".content").classList.add("add1");
     document.querySelector(".spinner-content").classList.remove("hide");
     document.querySelector(".spinner-content").classList.add("btn2");
     document.querySelector(".spin").classList.add("hide");
     document.querySelector(".content").classList.remove("hide");
     e.target.innerText = "TRY AGAIN";
+    document.querySelector(".share-buttons").classList.add("appear");
   };
 });
