@@ -18,7 +18,7 @@ body {
   justify-content: center;
   flex-direction: column;
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 .txt {
   color: rgb(0, 255, 0);
