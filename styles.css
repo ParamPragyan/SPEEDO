@@ -154,13 +154,11 @@ body {
 }
 
 .share-buttons {
+  bottom: 9rem;
+  height: 60vh;
   position: absolute;
-  right: -6rem;
-}
-
-.appear {
-  right: 1rem;
-  opacity: 1;
+  right: 0px;
+  overflow: hidden;
 }
 
 .twitter-bg {
@@ -168,13 +166,17 @@ body {
   border: 0.5rem solid rgb(45, 232, 3);
   padding: 130px;
   bottom: -6.4rem;
-  left: -1.8rem;
+  left: 8.6rem;
   border-radius: 50% 0 50% 0;
   transform: rotate(-45deg);
-  position: absolute;
+  position: relative;
+
   z-index: -1;
 }
 .share-buttons img {
+  position: relative;
+  left: 11.3rem;
+  top: -4.2rem;
   width: 4rem;
   cursor: pointer;
 
@@ -195,6 +197,38 @@ body {
   box-shadow: rgb(187, 187, 223) 0px 50px 100px -20px,
     rgba(222, 202, 202, 0.86) 0px 30px 60px -30px,
     rgba(20, 63, 106, 0.853) 0px -2px 6px 0px inset;
+}
+
+@media (max-width: 700px) {
+  .share-buttons {
+    top: 0px;
+  }
+  .twitter-bg {
+    padding-top: 10px;
+    padding: 150px;
+    top: -10rem;
+    transform: rotate(90deg);
+  }
+  .share-buttons img {
+    top: -18.3rem;
+    left: 13.5rem;
+  }
+}
+@media (max-width: 560px) {
+  .share-buttons {
+    top: 0px;
+  }
+  .twitter-bg {
+    border: 8px solid rgb(45, 232, 3) ;
+    padding-top: 0px;
+    padding: 130px;
+    top: -10rem;
+    transform: rotate(90deg);
+  }
+  .share-buttons img {
+    top: -16.6rem;
+    left: 12.3rem;
+  }
 }
 
 @media (max-width: 500px) {

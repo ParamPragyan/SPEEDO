@@ -1,3 +1,5 @@
+
+document.querySelector(".share-buttons").classList.add("hide");
 document.querySelector("button").addEventListener("click", (e) => {
   var imageLink =
       "https://upload.wikimedia.org/wikipedia/commons/7/7d/Rail_Business_Days_2022%2C_Plasser_%26_Theurer_EM_100_S%C5%BD_01.jpg",
@@ -5,6 +7,7 @@ document.querySelector("button").addEventListener("click", (e) => {
     time_start,
     time_end,
     downloadSrc = new Image();
+    console.log("hello");
 
   document.querySelector(".spinner-content").classList.add("hide");
   document.querySelector(".spin").classList.remove("hide");
@@ -39,7 +42,9 @@ document.querySelector("button").addEventListener("click", (e) => {
     document.querySelector(".spinner-content").classList.add("btn2");
     document.querySelector(".spin").classList.add("hide");
     document.querySelector(".content").classList.remove("hide");
+   document.querySelector(".share-buttons").classList.remove("hide");
+
+
     e.target.innerText = "TRY AGAIN";
-    document.querySelector(".share-buttons").classList.add("appear");
   };
 });
