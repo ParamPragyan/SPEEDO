@@ -229,6 +229,9 @@ body {
     top: -16.6rem;
     left: 12.3rem;
   }
+  .txt{
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 500px) {
