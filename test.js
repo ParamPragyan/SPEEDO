@@ -28,11 +28,11 @@ document.querySelector("button").addEventListener("click", (e) => {
       totalSpeed + "<small>Mbps</small>";
 
     const link = encodeURI("\n"+"https://speedo-chi.vercel.app/");
-    const msg = encodeURIComponent(
+    const msg = encodeURI(
       "\n" + "Clicking this will also allow you to check your internet speed 👇"
     );
     const dyanamic = totalSpeed + "Mbps";
-    const title = encodeURIComponent("My Speed is ");
+    const title = encodeURI("My Speed is ");
 
     const twitter = document.querySelector(".twitter");
     twitter.href = `http://twitter.com/share?&title=${title}&text=${dyanamic}&text=${msg}&url=${link}`;
