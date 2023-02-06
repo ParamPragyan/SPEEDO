@@ -1,4 +1,3 @@
-
 document.querySelector(".share-buttons").classList.add("hide");
 document.querySelector("button").addEventListener("click", (e) => {
   var imageLink =
@@ -7,7 +6,7 @@ document.querySelector("button").addEventListener("click", (e) => {
     time_start,
     time_end,
     downloadSrc = new Image();
-    console.log("hello");
+  console.log("hello");
 
   document.querySelector(".spinner-content").classList.add("hide");
   document.querySelector(".spin").classList.remove("hide");
@@ -27,12 +26,13 @@ document.querySelector("button").addEventListener("click", (e) => {
     document.querySelector(".content").innerHTML =
       totalSpeed + "<small>Mbps</small>";
 
-    const link = encodeURI("\n"+"https://speedo-chi.vercel.app/");
+    const link = encodeURI("\n" + "https://speedo-chi.vercel.app/");
     const msg = encodeURI(
-      "\n" + "Clicking this will also allow you to check your internet speed 👇"
+      "\n" +
+        "Clicking this link will also allow you to check your internet speed 👇"
     );
     const dyanamic = totalSpeed + "Mbps";
-    const title = encodeURI("My Speed is ");
+    const title = encodeURIComponent("My Speed is");
 
     const twitter = document.querySelector(".twitter");
     twitter.href = `http://twitter.com/share?&title=${title}&text=${dyanamic}&text=${msg}&url=${link}`;
@@ -42,8 +42,7 @@ document.querySelector("button").addEventListener("click", (e) => {
     document.querySelector(".spinner-content").classList.add("btn2");
     document.querySelector(".spin").classList.add("hide");
     document.querySelector(".content").classList.remove("hide");
-   document.querySelector(".share-buttons").classList.remove("hide");
-
+    document.querySelector(".share-buttons").classList.remove("hide");
 
     e.target.innerText = "TRY AGAIN";
   };
