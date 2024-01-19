@@ -4,12 +4,9 @@ SPEEDO is a web application that, in certain instances, analyses your internet c
 
 # Screenshot:
 
-<p align="center" >
-       <img src="./images/ss1.png"/ width ="900">
-</p>
-<p align="center" >
-       <img src="./images/ss2.png"/ width ="900">
-</p>
+ ![Alt text](image.png)
+ ![Alt text](image-1.png)
+
 
 ### Referring to the previous image, clicking the Twitter share button creates a Twitter frame where you may post your stats.
 
