@@ -5,46 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPEEDO</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/src/styles.css" />
     <link rel="icon" href="images/logo.png" type="image/x-icon" />
-     <!-- twitter-card -->
-     <meta name="twitter:card" content="summary">
-     <meta name="twitter:site" content="@SPEEDO
-     ">
-     <meta name="twitter:creator" content="@parampragyan">
-     <meta name="twitter:title" content="SPEEDO">
-     <meta name="twitter:description" content="SPEEDO is a web application that, in certain instances, analyses your internet connection's speed.">
-     <meta name="twitter:image" content="https://github.com/ParamPragyan/SPEEDO/blob/main/images/card.jpg?raw=true">
-
+    <!-- twitter-card -->
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:site"
+      content="@SPEEDO
+     "
+    />
+    <meta name="twitter:creator" content="@parampragyan" />
+    <meta name="twitter:title" content="SPEEDO" />
+    <meta
+      name="twitter:description"
+      content="SPEEDO is a web application that, in certain instances, analyses your internet connection's speed."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/ParamPragyan/SPEEDO/blob/main/images/card.jpg?raw=true"
+    />
   </head>
   <body>
-    <h1 class="txt">SPEEDO</h1>
-    <div class="container">
-      <div class="spinner">
-        <span class="spin hide"></span>
-        <div class="spinner-content">
-          <div class="content hide"><div class="speed">00</div><small>Mbps</small></div>
-
-          <div class="btn">
-            <button>TEST</button>
+    <div class="main">
+      
+      <div class="left">
+        <div class="logo">
+          <img src="./images/logo.png" alt="" />
+          <h1>SPEEDO</h1>
+        </div>
+        <div class="intro-left">
+          <div>
+            <h1>Speedo:</h1>
+            <h2>the speedometer for your internet"</h2>
           </div>
+        </div>
+        <div class="tap-banner"><h3>Tap on the test to proceed</h3></div>
+      </div>
+      <div class="right">
+        <div class="logo2">
+          <h1>SPEEDO</h1>
+        </div>
+        <div class="container">
+          <div class="spinner">
+            <span class="spin hide"></span>
+            <div class="spinner-content">
+              <div class="content hide">
+                <div class="speed">00</div>
+                <small>Mbps</small>
+              </div>
+
+              <div class="btn">
+                <button>TEST</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="github">
+          <a
+            href="https://github.com/ParamPragyan"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/github.png" alt=""
+          /></a>
+        </div>
+
+        <div class="share-buttons">
+          <div class="twitter-bg"></div>
+          <a class="twitter" target="blank"
+            ><img src="images/twitter.png" alt=""
+          /></a>
         </div>
       </div>
     </div>
-    <div class="github">
-      <a
-        href="https://github.com/ParamPragyan"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><img src="images/github.png" alt=""
-      /></a>
-    </div>
 
-    <div class="share-buttons">
-      <div class="twitter-bg"></div>
-      <a class="twitter" target="blank"><img src="images/twitter.png" alt=""></a>
-
-    </div>
     <script src="test.js"></script>
     <script src="share.js"></script>
   </body>
